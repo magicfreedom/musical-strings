@@ -1,0 +1,12 @@
+extends layout
+block content
+    .row
+      .p Get A Closer Look
+            each product in indi
+              .item 
+                h1.itemtitle #{product.name}
+                p.itemp Category: #{product.category}
+                p.itemp Price: €#{product.price}
+                img.pimage(src='../../#{product.image}', alt='some image')
+                
+                

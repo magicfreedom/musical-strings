@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  
+  
+       .row
+
+         h1 Our String instruments <br><br>
+       
+         #flip
+           h1 Click here for our selection of stringed instruments 
+           #menu
+            .grid-container
+    
+                each product in products
+    
+                  .item 
+    
+                    h1.itemtitle #{product.name}
+                    
+                    p.itemp Category: #{product.category}
+                    
+                    p.itemp Price: €#{product.price}
+    
+                    img.pimage(src='#{product.image}', alt='some image')
+    
+                    a.button(href='show/#{product.name}') Show
+    
+                    a.button(href='edit/#{product.name}') Edit
+    
+                    a.button(href='delete/#{product.name}') Delete Product
+
+

@@ -1,0 +1,11 @@
+extends layout
+block content
+    .row
+      h1 Shop details
+            each shop in indi
+              .item 
+                h1.itemtitle #{shop.name}
+                img.pimage(src='../../#{shop.image}', alt='an image')
+                p.itemp Address: #{shop.address}
+                p.itemp Phone: #{shop.phone}
+                p.itemp Email: #{shop.email}

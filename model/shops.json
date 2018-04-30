@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Dublin String Shops",
+        "address": "10 Capel Street, Dublin",
+        "email": "dublinstrings@yahoo.com",
+        "phone": "08522946103",
+        "image": "shopdublin.jpg"
+    },
+    {
+        "name": "Galway Strings",
+        "address": "12 Quays Way",
+        "email": "galwaystring@yahoo.com",
+        "phone": "08529956142",
+        "image": "shopgalway.jpg"
+    },
+    {
+        "name": "Cork string Shop",
+        "id": null,
+        "address": "123 string st",
+        "phone": "08522946103",
+        "email": "corkstrings@yahoo.com",
+        "image": "shopcork.jpg"
+    }
+]

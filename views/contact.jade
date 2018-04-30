@@ -1,0 +1,103 @@
+extends layout
+block content
+  head
+    
+    style.
+      body {text-align: center;}
+      .section {
+      float: left;
+      width: 100%;
+      display: inline-block;
+      min-height: 900px;
+      }
+      .input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      }
+      #formsection {
+      color: #FFFFFF;
+      font-size: 50px;
+      padding: 12px;
+      background-color: rgba(226, 229, 232, 0.6);
+      width: 70%;
+      display: inline-block;
+      border-radius: 8px;
+      }
+      .norm {
+      color: #FFFFFF;
+      font-size: 16px;
+      padding: 12px;
+      background-color: rgba(000, 0, 0, 0.4);
+      width: 70%;
+      display: inline-block;
+      }
+      .alertx {
+      color: #000;
+      font-size: 22px;
+      width: 70%;
+      display: inline-block;
+      }
+      .button {
+      background-color: #ffffff;
+      border: none;
+      color: #555;
+      padding: 5px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+      }
+      label  {
+      font-size: 18px;
+      color: #000;
+      text-align: left;
+      float: left;
+      }
+      input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      }
+      .section {
+        display: none;
+      }
+  body
+  .row
+     #show 
+       h1 Please click to contact Us
+    .row
+      .section
+        #formsection 
+               
+      
+          label(for='fname') Name
+          input#fname(type='text', name='firstname', placeholder='Please enter a  Name..')
+          p#alert1.alertx
+          label(for='email') Email
+          input#email(type='text', name='email', placeholder='Your Email..')
+          p#alert2.alertx
+          label(for='address') address
+          input#address(type='text', name='address', placeholder='Your address')
+          p#alert3.alertx
+          label(for='gender') Optional How you Like our Products
+          select#experience(name='experience')
+            option(value='good') Good
+            option(value='bad') Bad
+          p#p01.norm What is 4 + 4?
+          input#robo(type='text', name='robo', placeholder="Enter answer to Confirm you're not robot.")
+          p#alert4.alertx
+          br
+          
+          button.button(onclick='contactForm()') Send
+              
+

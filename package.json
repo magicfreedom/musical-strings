@@ -1,0 +1,16 @@
+{
+  "name": "WAD",
+  "version": "1.0.0",
+  "description": "Musical Strings",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian, Catherine, Fintan, Ke",
+  "license": "students",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jade": "^1.11.0"
+  }
+}

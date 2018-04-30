@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Strat",
+        "id": 1,
+        "category": "Guitar",
+        "price": "199",
+        "image": "guitar1.jpg"
+    },
+    {
+        "name": "Harp Excel",
+        "category": "Harp",
+        "price": "100",
+        "image": "harp1.jpg"
+    },
+    {
+        "name": "wood",
+        "id": 4,
+        "category": "Guitar",
+        "price": "200",
+        "image": "wood.jpg"
+    },
+    {
+        "name": "Accoustic Classic",
+        "id": 5,
+        "category": "Guitar",
+        "price": "200",
+        "image": "Bass.jpg"
+    }
+]

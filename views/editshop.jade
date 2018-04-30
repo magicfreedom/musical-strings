@@ -1,0 +1,26 @@
+extends layout
+block content
+   .intro
+    h1 Welcome To Edit Product Page <br><br>
+    .formHold 
+      h2.itemtitle Edit Item <br><br>
+        each shops in indShop
+          p Update #{shops.name}
+          form(method="post")
+            fieldset
+            label(for="newname") Shop Name:
+            input(name="newname" , type="text", value="#{shops.name}")
+            
+            label(for="newaddress") Address: 
+            input(name="newaddress", type="text", value="#{shops.address}")
+            
+            label(for="newemail") Email:
+            input(name="newemail", type="text", value="#{shops.email}")
+            
+            label(for="newphone") Phone Number:
+            input(name="newphone", type="text", value="#{shops.phone}")
+            
+            label(for="newimage") Image:
+            input(name="newimage", type="text", value="#{shops.image}")
+            
+            button.button(type="submit") Update #{shops.name}
